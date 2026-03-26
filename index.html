@@ -1,303 +1,459 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Lucida Grande'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 28.0px 'Apple Color Emoji'; color: #b4adff; -webkit-text-stroke: #b4adff}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Times; color: #b4adff; -webkit-text-stroke: #b4adff}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Comic Sans MS'; color: #b4adff; -webkit-text-stroke: #b4adff}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Times; color: #0000e9; -webkit-text-stroke: #000000}
-    p.p10 {margin: 0.0px 0.0px 10.0px 0.0px; font: 16.0px 'Comic Sans MS'; color: #fbaaff; -webkit-text-stroke: #fbaaff}
-    p.p11 {margin: 0.0px 0.0px 13.0px 0.0px; font: 13.0px 'Comic Sans MS'; color: #fbaaff; -webkit-text-stroke: #fbaaff}
-    p.p12 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Comic Sans MS'; color: #fbaaff; -webkit-text-stroke: #fbaaff; min-height: 18.0px}
-    p.p13 {margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 15.0px 'Comic Sans MS'; color: #fbaaff; -webkit-text-stroke: #fbaaff}
-    p.p16 {margin: 0.0px 0.0px 14.0px 0.0px; text-align: center; font: 14.0px 'Comic Sans MS'; -webkit-text-stroke: #000000}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; background-color: #000000; min-height: 14.0px}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Comic Sans MS'; color: #626262; -webkit-text-stroke: #626262}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000; background-color: #0a0800; min-height: 14.0px}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 14.0px Menlo; -webkit-text-stroke: #000000}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 9.0px Menlo; color: #626262; -webkit-text-stroke: #626262}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Apple Color Emoji'; -webkit-text-stroke: #000000}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px Menlo; -webkit-text-stroke: #000000}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; -webkit-text-stroke: #000000; min-height: 14.0px}
-    p.p25 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p26 {margin: 0.0px 0.0px 5.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #000000; color: rgba(0, 0, 0, 0.85); -webkit-text-stroke: rgba(0, 0, 0, 0.85)}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p29 {margin: 0.0px 0.0px 11.0px 0.0px; text-align: center; font: 11.0px 'Comic Sans MS'; color: #414141; -webkit-text-stroke: #414141}
-    span.s1 {font: 12.0px 'Songti SC'; font-kerning: none}
-    span.s2 {font-kerning: none}
-    span.s3 {font: 12.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s4 {font: 11.0px 'Hiragino Sans'; font-kerning: none; background-color: #a4a4a4}
-    span.s5 {font: 12.0px Times; font-kerning: none; -webkit-text-stroke: 0px #000000}
-    span.s6 {font-kerning: none; background-color: #a4a4a4}
-    span.s7 {font: 12.0px 'Times New Roman'; font-kerning: none}
-    span.s8 {font: 12.0px Times; font-kerning: none}
-    span.s9 {font: 11.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s10 {font: 9.0px 'Apple Color Emoji'; text-decoration: underline ; font-kerning: none}
-    span.s11 {font: 9.0px Times; text-decoration: underline ; font-kerning: none}
-    span.s12 {font: 16.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s13 {font: 16.0px 'Comic Sans MS'; font-kerning: none}
-    span.s14 {font: 13.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s15 {font: 15.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s16 {font: 32.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s17 {font: 9.0px 'Apple Color Emoji'; font-kerning: none; background-color: #39ff11}
-    span.s18 {font: 9.0px Menlo; font-kerning: none; background-color: #39ff11}
-    span.s19 {font: 9.0px 'Apple Color Emoji'; font-kerning: none; background-color: #f8370c}
-    span.s20 {font: 9.0px Menlo; font-kerning: none; background-color: #f8370c}
-    span.s21 {font: 10.0px 'Apple Color Emoji'; font-kerning: none}
-    span.s22 {font-kerning: none; background-color: #0a0800}
-    span.s23 {font: 12.0px 'Zapf Dingbats'; font-kerning: none}
-    span.s24 {font: 11.0px 'Apple Color Emoji'; font-kerning: none; background-color: #a4a4a4}
-    span.s25 {font: 9.0px 'Comic Sans MS'; font-kerning: none; color: #272727; -webkit-text-stroke: 0px #272727}
-    td.td1 {width: 106.5px; margin: 0.0px 0.5px 0.0px 0.0px; padding: 1.0px 1.0px 1.0px 1.0px}
-    td.td2 {width: 497.6px; margin: 0.0px 0.5px 0.0px 0.0px; padding: 1.0px 1.0px 1.0px 1.0px}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>~*~RiA O.~*~ :: The Ops Queen of Montenegro :: 17 Years of Doing EVERYTHING</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tanay-custom.css">
+  <style>
+    /* Page-specific overrides */
+    .page-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 40px;
+    }
   </style>
 </head>
-<body>
-<p class="p1"><span class="s1">★</span><span class="s2"> WELCOME TO RIA'S OPERATIONS COMMAND CENTER </span><span class="s1">★</span><span class="s2"> 17+ YEARS OF DOING LITERALLY EVERYTHING </span><span class="s1">★</span><span class="s2"> SHIPPING COORDINATOR </span><span class="s1">★</span><span class="s2"> SALES CONSULTANT </span><span class="s1">★</span><span class="s2"> EVENT MANAGER </span><span class="s1">★</span><span class="s2"> RECRUITER </span><span class="s1">★</span><span class="s2"> OPS SPECIALIST </span><span class="s1">★</span><span class="s2"> SHE HAS A CS DEGREE BUT CHOSE CHAOS </span><span class="s1">★</span><span class="s2"> FORTUNE 500 ACCOUNT HANDLER </span><span class="s1">★</span><span class="s2"> CURRENTLY RUNNING OPS FROM MONTENEGRO LIKE A BOND VILLAIN </span><span class="s1">★</span><span class="s2"> CROWN WORLDWIDE LEGEND </span><span class="s1">★</span></p>
-<p class="p1"><span class="s3">🚧</span><span class="s2"> THIS PAGE IS UNDER CONSTRUCTION (Ria will optimize the build process, give her 5 minutes) </span><span class="s3">🚧</span></p>
-<p class="p2"><span class="s2">👑⚙️📦👑⚙️📦</span></p>
-<p class="p2"><span class="s2">👑</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Ria O.</b><b></b></span></h1>
-<p class="p1"><span class="s2">~* Ops | SaaS Scaler | The Woman Who Has Done Every Job *~</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p5"><span class="s4">◀◀</span><span class="s5"> </span><span class="s6">▶</span><span class="s5"> </span><span class="s6">▶▶</span><span class="s5"> </span><span class="s6">■</span></p>
-<p class="p1"><span class="s3">🎵</span><span class="s2"> NOW PLAYING: ria_operations_anthem_fortune500_remix_FINAL.midi</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p1"><span class="s3">👑</span><span class="s2"> 17-Year Ops Veteran </span><span class="s3">🎓</span><span class="s2"> CS Degree Haver </span><span class="s3">💰</span><span class="s2"> Fortune 500 Wrangler </span><span class="s3">🌎</span><span class="s2"> Montenegro Based</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p1"><span class="s2">BREAKING NEWS: Local woman in Montenegro has literally held every job title that exists. Resume now classified as a novel. More at 11. </span><span class="s1">★</span><span class="s2"> WEATHER UPDATE: It's beautiful in Montenegro. Unlike your unoptimized workflows. </span><span class="s1">★</span><span class="s2"> SPORTS: Ria's operations playbook defeats chaos 500-0 in the annual Startup Scaling Championship. </span><span class="s1">★</span><span class="s2"> ECONOMY: Fortune 500 companies still wondering how she managed all their accounts simultaneously.</span></p>
-<p class="p1"><span class="s3">💬</span><span class="s2"> Ria's Mood</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p1"><span class="s2"><b>Current Mood:</b> </span><span class="s3">👑</span><span class="s2"> Optimizing Systems</span></p>
-<p class="p1"><span class="s2"><b>Status:</b> ONLINE</span></p>
-<p class="p1"><span class="s2"><b>Location:</b><span class="Apple-converted-space">  </span>Montenegro (yes, really)</span></p>
-<p class="p2"><span class="s8"><b>Vibe:</b> </span><span class="s2">🔥🔥🔥🔥🔥</span></p>
-<p class="p1"><span class="s2"><b>Last Login:</b> She never logs off</span></p>
-<p class="p1"><span class="s2"><b>Relationship:</b> Married to Process Optimization </span><span class="s3">💕</span></p>
-<p class="p1"><span class="s3">👥</span><span class="s2"> Ria's Top 8</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p6"><span class="s2">📦</span></p>
-<p class="p7"><span class="s2">Crown Worldwide</span></p>
-<p class="p6"><span class="s2">📋</span></p>
-<p class="p7"><span class="s2">Spreadsheets</span></p>
-<p class="p6"><span class="s2">🎆</span></p>
-<p class="p7"><span class="s2">Event Planning</span></p>
-<p class="p6"><span class="s2">💰</span></p>
-<p class="p7"><span class="s2">Fortune 500</span></p>
-<p class="p6"><span class="s2">💻</span></p>
-<p class="p7"><span class="s2">SaaS Tools</span></p>
-<p class="p6"><span class="s2">🏔</span></p>
-<p class="p7"><span class="s2">Montenegro</span></p>
-<p class="p6"><span class="s2">☕</span></p>
-<p class="p7"><span class="s2">Coffee (fuel)</span></p>
-<p class="p6"><span class="s2">🔧</span></p>
-<p class="p7"><span class="s2">Process Fixing</span></p>
-<p class="p1"><span class="s3">🎵</span><span class="s2"> My Playlist</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Ship It (Baby One More Time) - Britney Spears</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Ops-erational Bliss - Enya</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Livin' on a (Sales) Prayer - Bon Jovi</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> I Will Always Love (Your SOP) - Whitney Houston</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Don't Stop (Scaling) - Fleetwood Mac</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Bohemian OpsRhapsody - Queen</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Welcome to the Black (Sea) Parade - MCR</span></p>
-<p class="p8"><span class="s9">🎵</span><span class="s2"> Sweet (Process) Caroline - Neil Diamond</span></p>
-<p class="p9"><span class="s10"><a href="https://www.linkedin.com/in/ria-oblea/">🔗<span class="s11"> MY LINKEDIN (the boring version)</span></a></span></p>
-<p class="p1"><span class="s3">👤</span><span class="s2"> About Me (the REAL story)</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p10"><span class="s12">👋</span><span class="s2"> hiiiii welcome 2 my ops command center!!1!</span></p>
-<p class="p11"><span class="s2">my name is </span><span class="s13"><b>RIA O.</b></span><span class="s2"> and I run Ops with 17+ YEARS of experience doing... literally everything??? </span><span class="s14">👑👑👑</span></p>
-<p class="p12"><span class="s2"></span><br></p>
-<p class="p11"><span class="s2">ok so get THIS. i have a whole entire B.S. in Computer Science from Pamantasan ng Lungsod ng Muntinlupa but instead of becoming a coder i said "nah i'm gonna become the <b>QUEEN OF OPERATIONS</b> and manage EVERYTHING" and honestly? iconic decision. </span><span class="s14">💅</span></p>
-<p class="p12"><span class="s2"></span><br></p>
-<p class="p11"><span class="s2">FUN FACT: at <b>Crown Worldwide Group</b> i literally leveled up like a video game character. started as a Shipping Coordinator (moving boxes), evolved into a Corporate Service Executive (moving bigger boxes), then FINAL FORM: Residential Sales Consultant (moving people's entire LIVES). </span><span class="s14">🚀</span><span class="s2"> what a glow-up.</span></p>
-<p class="p12"><span class="s2"></span><br></p>
-<p class="p11"><span class="s2">but WAIT there's more!! she also OWNED HER OWN EVENT MANAGEMENT COMPANY because apparently managing operations for other people wasn't enough, she had to create a whole BUSINESS to manage even MORE things. some people collect stamps, Ria collects job titles. </span><span class="s14">🎆🎆🎆</span></p>
-<p class="p12"><span class="s2"></span><br></p>
-<p class="p11"><span class="s2">then she went freelance - Executive Assistant, Operations Specialist, RECRUITER (yes she literally hires people now too) - handling Fortune 500 accounts like it's nothing, helping startups scale by optimizing systems and processes. basically if ur startup is chaos she shows up and goes "no </span><span class="s14">🙈</span><span class="s2">" and FIXES IT.</span></p>
-<p class="p12"><span class="s2"></span><br></p>
-<p class="p13"><span class="s2">now she's in </span><span class="s15">🏔</span><span class="s2"> <b>MONTENEGRO</b> </span><span class="s15">🏔</span><span class="s2"><br>
-running Pps from the Adriatic coast<br>
-because she's basically a James Bond villain with better organizational skills </span><span class="s15">😎</span></p>
-<p class="p1"><span class="s3">📋</span><span class="s2"> Vital Statistics</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<table cellspacing="0" cellpadding="0">
-  <tbody>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">🎓</span><span class="s2"> EDUCATION</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">B.S. Computer Science</span></p>
-        <p class="p1"><span class="s2">Pamantasan ng Lungsod ng Muntinlupa</span></p>
-        <p class="p1"><span class="s2">(CS degree but chose ops supremacy)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">💼</span><span class="s2"> FIRST JOB</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">Shipping Coordinator @ Crown Worldwide</span></p>
-        <p class="p1"><span class="s2">(humble beginnings, legendary arc)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">💻</span><span class="s2"> EXPERTISE</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">Operations, Sales, Admin, Recruiting, Event Management, SaaS, Scaling Startups, Literally Everything</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">🌍</span><span class="s2"> LOCATION</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s3">🏔</span><span class="s2"> Montenegro (from Philippines to the Adriatic, what a flex)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">⏰</span><span class="s2"> EXPERIENCE</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">17+ years of doing every job that exists</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">💰</span><span class="s2"> BIGGEST FLEX</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">Fortune 500 account management (casually)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">🔥</span><span class="s2"> SUPERPOWER</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">Can walk into any chaotic startup and have it running smoothly by lunch</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">🎵</span><span class="s2"> FAV SONG</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">She Works Hard for the Money - Donna Summer (autobiographical)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">🐷</span><span class="s2"> SPIRIT ANIMAL</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">An octopus (8 arms for 8 simultaneous job roles)</span></p>
-      </td>
-    </tr>
-    <tr>
-      <td valign="middle" class="td1">
-        <p class="p1"><span class="s3">☕</span><span class="s2"> FUEL</span></p>
-      </td>
-      <td valign="middle" class="td2">
-        <p class="p1"><span class="s2">Coffee </span><span class="s7">→</span><span class="s2"> Organize </span><span class="s7">→</span><span class="s2"> Optimize </span><span class="s7">→</span><span class="s2"> Conquer </span><span class="s7">→</span><span class="s2"> Repeat</span></p>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<p class="p1"><span class="s3">📅</span><span class="s2"> Career Journey (it's an EPIC SAGA)</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>NOW - Curriculum Coach / Ops @ Clay Bootcamp</b><b></b></span></h4>
-<p class="p1"><span class="s3">👑</span><span class="s2"> The Current Reign</span></p>
-<p class="p1"><span class="s2">Helping startups scale by optimizing systems and processes. Basically the person who walks into your messy startup and says "sweetie no, we're fixing ALL of this." Running ops from Montenegro because she's earned it. </span><span class="s3">👑</span></p>
-<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Freelance Swiss Army Knife</b><b></b></span></h4>
-<p class="p1"><span class="s3">⚙️</span><span class="s2"> Executive Assistant / Ops Specialist / Recruiter</span></p>
-<p class="p1"><span class="s2">She literally did three different freelance roles AT THE SAME TIME. Executive assisting, operations specializing, AND recruiting. Some people can't even handle one job title. Ria had three. With Fortune 500 clients. C2 English proficiency just to flex harder. </span><span class="s3">💪</span></p>
-<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Owner &amp; Event Manager</b><b></b></span></h4>
-<p class="p1"><span class="s3">🎆</span><span class="s2"> Her Own Event Management Company</span></p>
-<p class="p1"><span class="s2">Decided that managing operations for OTHER people's companies wasn't fulfilling enough, so she CREATED HER OWN COMPANY to manage events. Peak operations energy. "I don't just attend the party, I AM the party (coordinator)."</span></p>
-<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Residential Sales Consultant</b><b></b></span></h4>
-<p class="p1"><span class="s3">📦</span><span class="s2"> Crown Worldwide Group (FINAL FORM)</span></p>
-<p class="p1"><span class="s2">The ultimate evolution. She went from shipping boxes to selling people on moving their entire lives across the globe. That's called a CAREER ARC, people. </span><span class="s3">🚀</span></p>
-<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Corporate Service Executive</b><b></b></span></h4>
-<p class="p1"><span class="s3">📦</span><span class="s2"> Crown Worldwide Group (EVOLVED)</span></p>
-<p class="p1"><span class="s2">Level 2 unlocked. Now handling corporate accounts and bigger operations. The shipping coordinator has entered her corporate era.</span></p>
-<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000"><span class="s2"><b>Shipping Coordinator</b><b></b></span></h4>
-<p class="p1"><span class="s3">📦</span><span class="s2"> Crown Worldwide Group (THE ORIGIN)</span></p>
-<p class="p1"><span class="s2">Where it all began. Coordinating shipments. Little did Crown Worldwide know they had just hired someone who would evolve through their ENTIRE org chart. ORIGIN STORY.</span></p>
-<h2 style="margin: 0.0px 0.0px 26.5px 0.0px; text-align: center; font: 32.0px 'Apple Chancery'; -webkit-text-stroke: #000000"><span class="s16">🎮</span><span class="s2"> GAME ZONE </span><span class="s16">🎮</span></h2>
-<p class="p16"><span class="s2">(because every good website needs games, obviously)</span></p>
-<p class="p1"><span class="s3">🐍</span><span class="s2"> SNAKE: Automation Edition</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p1"><span class="s2">Press START to play </span><span class="s17">🐍</span><span class="s18"> START</span></p>
-<p class="p17"><span class="s2"></span><br></p>
-<p class="p18"><span class="s2">Use arrow keys to move. Eat food. Don't hit walls. Simple, like life should be.</span></p>
-<p class="p1"><span class="s3">🔨</span><span class="s2"> WHACK-A-BUG: QA Simulator</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p1"><span class="s2">Click START! </span><span class="s19">🔨</span><span class="s20"> START</span></p>
-<p class="p19"><span class="s2"></span><br></p>
-<p class="p18"><span class="s2">Click the bugs before they escape! </span><span class="s21">💎</span><span class="s2"> items = bonus points. 30 seconds. GO!</span></p>
-<p class="p1"><span class="s3">🍪</span><span class="s2"> COOKIE CLICKER: Revenue Edition</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p20"><span class="s22">0 cookies</span></p>
-<p class="p21"><span class="s22">0 cookies/sec | Click power: 1</span></p>
-<p class="p22"><span class="s22">🍪</span></p>
-<p class="p23"><span class="s22">UPGRADES:</span></p>
-<p class="p24"><span class="s2"></span><br></p>
-<p class="p18"><span class="s2">Click cookie. Get cookies. Buy upgrades. This is peak productivity.</span></p>
-<p class="p1"><span class="s3">📝</span><span class="s2"> Guestbook (plz sign!!)</span></p>
-<p class="p1"><span class="s2">_</span><span class="s7">□</span><span class="s2">X</span></p>
-<p class="p1"><span class="s2">xX_CrownShipper_Xx 03/14/2003 9:15 AM</span></p>
-<p class="p25"><span class="s2">ria!! its me from crown worldwide!! remember when u coordinated that shipment to dubai in like 2 hours?? legend. absolute legend. miss u queen </span><span class="s3">👑👑</span></p>
-<p class="p1"><span class="s2">~*StartupCEO_Panic*~ 02/28/2003 3:33 PM</span></p>
-<p class="p25"><span class="s2">hired ria to fix my startup's ops. she looked at my processes and literally sighed. then she fixed everything in a week. 10/10 would be judged again </span><span class="s3">😭</span></p>
-<p class="p1"><span class="s2">Fortune500Fan 01/20/2003 11:00 AM</span></p>
-<p class="p25"><span class="s2">just stopping by 2 say that ria handled our entire corporate account and we still don't know how one person did all that. are u secretly twins?? </span><span class="s3">👀</span></p>
-<p class="p1"><span class="s2">EventPlanner2003 12/31/2002 11:59 PM</span></p>
-<p class="p25"><span class="s2">went to an event ria organized. everything was PERFECT. the napkins were color-coordinated with the powerpoint slides. she's not human. </span><span class="s3">🎆</span></p>
-<p class="p1"><span class="s2">MontenegroVibes 12/15/2002 7:00 AM</span></p>
-<p class="p25"><span class="s2">saw ria at a cafe in montenegro working on her laptop. she had 14 tabs open and was on 3 calls simultaneously. local hero tbh </span><span class="s3">🏔💻</span></p>
-<p class="p3"><span class="s2"></span><br></p>
-<p class="p26"><span class="s23">✎</span><span class="s2"> Leave a message:</span></p>
-<p class="p27"><span class="s24">📤</span><span class="s6"> Submit</span><span class="s5"> </span><span class="s24">🔄</span><span class="s6"> Reset</span></p>
-<p class="p28"><span class="s2">NETSCAPE NOW!</span></p>
-<p class="p28"><span class="s2">ALWAYS BUILDING</span></p>
-<p class="p28"><span class="s2">RIA APPROVED</span></p>
-<p class="p28"><span class="s2">GEOCITIES 4EVER</span></p>
-<p class="p28"><span class="s2">MADE IN MONTENEGRO</span></p>
-<p class="p28"><span class="s2">FRAMES R BAD</span></p>
-<p class="p24"><span class="s2"></span><br></p>
-<p class="p23"><span class="s2">YOU ARE VISITOR #:</span></p>
-<p class="p28"><span class="s2">0 1 7 5 0 0</span></p>
-<p class="p24"><span class="s2"></span><br></p>
-<p class="p24"><span class="s2"></span><br></p>
-<p class="p29"><span class="s2">© 2003 Ria's Operations Command Center. All rights reserved.<br>
-No processes were left unoptimized in the making of this website.<br>
-(They were all shipped on time and under budget.)<br>
-<br>
-</span><span class="s25">Best viewed at 800x600 on Netscape Navigator 4.0 with a project management certification and a strong coffee</span></p>
-<p class="p1"><span class="s3">🔥</span><span class="s2"> RIA O. - OPERATIONS MANAGER - 17-YEAR VETERAN - CROWN WORLDWIDE LEGEND - EVENT QUEEN - FORTUNE 500 HANDLER - CS DEGREE HOLDER WHO CHOSE CHAOS - SHIPPING COORDINATOR TURNED OPS EMPRESS </span><span class="s3">🔥</span><span class="s2"> IF YOU'RE READING THIS YOU'VE SCROLLED TOO FAR </span><span class="s3">🔥</span><span class="s2"> GO OPTIMIZE SOMETHING </span><span class="s3">🔥</span><span class="s2"> OR BETTER YET, HIRE RIA TO DO IT FOR YOU </span><span class="s3">🔥</span></p>
+<body class="bg-tiled tanay-page">
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- TOP MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-content">
+      &#9733; WELCOME TO RIA'S OPERATIONS COMMAND CENTER &#9733; 17+ YEARS OF DOING LITERALLY EVERYTHING &#9733; SHIPPING COORDINATOR &#9733; SALES CONSULTANT &#9733; EVENT MANAGER &#9733; RECRUITER &#9733; OPS SPECIALIST &#9733; SHE HAS A CS DEGREE BUT CHOSE CHAOS &#9733; FORTUNE 500 ACCOUNT HANDLER &#9733; CURRENTLY RUNNING OPS FROM MONTENEGRO LIKE A BOND VILLAIN &#9733; CROWN WORLDWIDE LEGEND &#9733;
+    </div>
+  </div>
+
+  <!-- UNDER CONSTRUCTION -->
+  <div class="under-construction">
+    <div class="under-construction-inner">
+      <span class="blink">&#128679; THIS PAGE IS UNDER CONSTRUCTION (Ria will optimize the build process, give her 5 minutes) &#128679;</span>
+    </div>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- HEADER -->
+    <div class="tanay-header">
+      <div class="bali-vibes">&#127470;&#127475;&#128081;&#9881;&#65039;&#128230;&#127470;&#127475;&#128081;&#9881;&#65039;&#128230;</div>
+
+      <div class="tanay-avatar" id="avatar">
+        &#128081;
+      </div>
+      <br>
+
+      <h1>
+        <span class="fire-text dance-text">Ria O.</span>
+      </h1>
+      <div class="subtitle">
+        <span class="glitch" data-text="~* Ops | The Woman Who Has Done Every Job *~">~* Ops | SaaS Scaler | The Woman Who Has Done Every Job *~</span>
+      </div>
+      <br>
+
+      <!-- MIDI PLAYER -->
+      <div class="midi-player">
+        <div class="eq-bars">
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+          <div class="eq-bar"></div>
+        </div>
+        <div class="controls">
+          <button title="Previous">&#9664;&#9664;</button>
+          <button title="Play/Pause">&#9654;</button>
+          <button title="Next">&#9654;&#9654;</button>
+          <button title="Stop">&#9632;</button>
+        </div>
+        <div class="song-name">
+          <span>&#127925; NOW PLAYING: ria_operations_anthem_fortune500_remix_FINAL.midi</span>
+        </div>
+      </div>
+      <br>
+
+      <!-- CERTIFICATION BADGES -->
+      <div class="cert-strip">
+        <span class="cert-badge clay">&#128081; 17-Year Ops Veteran</span>
+        <span class="cert-badge lindy">&#127891; CS Degree Haver</span>
+        <span class="cert-badge bots">&#128176; Fortune 500 Wrangler</span>
+        <span class="cert-badge accenture">&#127758; Montenegro Based</span>
+      </div>
+
+      <!-- EYES -->
+      <div class="eyes-container" style="justify-content: center; display: flex; margin-top: 10px;">
+        <div class="eye"><div class="pupil"></div></div>
+        <div class="eye"><div class="pupil"></div></div>
+      </div>
+    </div>
+
+    <!-- NEWS TICKER -->
+    <div class="news-ticker">
+      <span>BREAKING NEWS: Local woman in Montenegro has literally held every job title that exists. Resume now classified as a novel. More at 11. &#9733; WEATHER UPDATE: It's beautiful in Montenegro. Unlike your unoptimized workflows. &#9733; SPORTS: Ria's operations playbook defeats chaos 500-0 in the annual Startup Scaling Championship. &#9733; ECONOMY: Fortune 500 companies still wondering how she managed all their accounts simultaneously.</span>
+    </div>
+
+    <!-- MYSPACE-STYLE PROFILE -->
+    <div class="myspace-profile">
+
+      <!-- LEFT COLUMN -->
+      <div class="profile-left">
+
+        <!-- MOOD BOX -->
+        <div class="retro-box">
+          <div class="retro-box-title">
+            <span>&#128172; Ria's Mood</span>
+            <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+          </div>
+          <div class="retro-box-content">
+            <div class="mood-box">
+              <b>Current Mood:</b> <span class="spin">&#128081;</span> Optimizing Systems<br>
+              <b>Status:</b> <span class="blink" style="color: var(--neon-green);">ONLINE</span><br>
+              <b>Location:</b> &#127470;&#127475; Montenegro (yes, really)<br>
+              <b>Vibe:</b> &#128293;&#128293;&#128293;&#128293;&#128293;<br>
+              <b>Last Login:</b> She never logs off<br>
+              <b>Relationship:</b> Married to Process Optimization &#128149;
+            </div>
+          </div>
+        </div>
+
+        <!-- TOP FRIENDS -->
+        <div class="retro-box">
+          <div class="retro-box-title">
+            <span>&#128101; Ria's Top 8</span>
+            <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+          </div>
+          <div class="retro-box-content" style="font-size: 12px; color: #ccccff;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; text-align: center;">
+              <div><span style="font-size:28px">&#128230;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Crown Worldwide</span></div>
+              <div><span style="font-size:28px">&#128203;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Spreadsheets</span></div>
+              <div><span style="font-size:28px">&#127878;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Event Planning</span></div>
+              <div><span style="font-size:28px">&#128176;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Fortune 500</span></div>
+              <div><span style="font-size:28px">&#128187;</span><br><span style="font-size:10px; color: var(--neon-yellow);">SaaS Tools</span></div>
+              <div><span style="font-size:28px">&#127956;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Montenegro</span></div>
+              <div><span style="font-size:28px">&#9749;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Coffee (fuel)</span></div>
+              <div><span style="font-size:28px">&#128295;</span><br><span style="font-size:10px; color: var(--neon-yellow);">Process Fixing</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAKE MUSIC PLAYLIST -->
+        <div class="retro-box">
+          <div class="retro-box-title">
+            <span>&#127925; My Playlist</span>
+            <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+          </div>
+          <div class="retro-box-content" style="font-family: 'Comic Sans MS', cursive; font-size: 11px; color: #ccccff;">
+            <div style="margin-bottom: 4px;">&#127925; Ship It (Baby One More Time) - Britney Spears</div>
+            <div style="margin-bottom: 4px;">&#127925; Ops-erational Bliss - Enya</div>
+            <div style="margin-bottom: 4px;">&#127925; Livin' on a (Sales) Prayer - Bon Jovi</div>
+            <div style="margin-bottom: 4px;">&#127925; I Will Always Love (Your SOP) - Whitney Houston</div>
+            <div style="margin-bottom: 4px;">&#127925; Don't Stop (Scaling) - Fleetwood Mac</div>
+            <div style="margin-bottom: 4px;">&#127925; Bohemian OpsRhapsody - Queen</div>
+            <div style="margin-bottom: 4px;">&#127925; Welcome to the Black (Sea) Parade - MCR</div>
+            <div style="margin-bottom: 4px;">&#127925; Sweet (Process) Caroline - Neil Diamond</div>
+          </div>
+        </div>
+
+        <!-- LinkedIn Link -->
+        <div style="text-align: center; padding: 10px;">
+          <a href="https://www.linkedin.com/in/ria-oblea/" target="_blank"
+             style="font-family: var(--pixel-font); font-size: 9px; color: var(--neon-blue); border: 2px solid var(--neon-blue); padding: 8px 12px; display: inline-block; text-decoration: none;">
+            &#128279; MY LINKEDIN (the boring version)
+          </a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="profile-right">
+
+        <!-- ABOUT ME -->
+        <div class="retro-box">
+          <div class="retro-box-title">
+            <span>&#128100; About Me (the REAL story)</span>
+            <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+          </div>
+          <div class="retro-box-content">
+            <div style="font-family: 'Comic Sans MS', cursive; font-size: 13px; color: #ffccff; line-height: 1.6;">
+              <p style="font-size: 16px; color: var(--neon-yellow); margin-bottom: 10px;">
+                <span class="wobble">&#128075;</span> hiiiii welcome 2 my ops command center!!1!
+              </p>
+              <p>
+                my name is <b style="color: var(--neon-green); font-size: 16px;">RIA O.</b> and i run
+                <span style="color: var(--neon-pink);">Ops </span> with
+                <span style="color: var(--neon-blue);">17+ YEARS</span> of experience doing... literally everything??? &#128081;&#128081;&#128081;
+              </p>
+              <br>
+              <p>
+                ok so get THIS. i have a whole entire <span style="color: var(--neon-orange);">B.S. in Computer Science</span>
+                 but instead of becoming a coder i said "nah i'm gonna become the
+                <span class="rainbow-text"><b>QUEEN OF OPERATIONS</b></span> and manage EVERYTHING" and honestly? iconic decision. &#128133;
+              </p>
+              <br>
+              <p>
+                <span class="blink" style="color: var(--cyber-red);">FUN FACT:</span> at
+                <b>Crown Worldwide Group</b> i literally leveled up like a video game character.
+                started as a <span style="color: var(--neon-yellow);">Shipping Coordinator</span> (moving boxes),
+                evolved into a <span style="color: var(--neon-yellow);">Corporate Service Executive</span> (moving bigger boxes),
+                then FINAL FORM: <span style="color: var(--neon-yellow);">Residential Sales Consultant</span>
+                (moving people's entire LIVES). <span class="spin-fast">&#128640;</span> what a glow-up.
+              </p>
+              <br>
+              <p>
+                but WAIT there's more!! she also <span style="color: var(--neon-orange);">OWNED HER OWN EVENT MANAGEMENT COMPANY</span>
+                because apparently managing operations for other people wasn't enough, she had to create a whole BUSINESS
+                to manage even MORE things. some people collect stamps, Ria collects job titles. &#127878;&#127878;&#127878;
+              </p>
+              <br>
+              <p>
+                then she went freelance - Executive Assistant, Operations Specialist, RECRUITER (yes she literally hires people now too) -
+                handling <span style="color: var(--neon-pink);">Fortune 500 accounts</span> like it's nothing,
+                helping startups scale by optimizing systems and processes. basically if ur startup is chaos she shows up
+                and goes "no &#128584;" and FIXES IT.
+              </p>
+              <br>
+              <p style="font-size: 15px; text-align: center; color: var(--neon-green); border: 1px dashed var(--neon-green); padding: 10px; margin-top: 10px;">
+                now she's in <span class="bounce">&#127956;</span> <b>MONTENEGRO</b> <span class="bounce">&#127956;</span><br>
+                running SaaS ops from the Adriatic coast<br>
+                because she's basically a James Bond villain with better organizational skills &#128526;
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- INFO TABLE -->
+        <div class="retro-box">
+          <div class="retro-box-title">
+            <span>&#128203; Vital Statistics</span>
+            <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+          </div>
+          <div class="retro-box-content">
+            <table class="info-table">
+              <tr><td>&#127891; EDUCATION</td><td>B.S. Computer Science<br><br>(CS degree but chose ops supremacy)</td></tr>
+              <tr><td>&#128188; FIRST JOB</td><td>Shipping Coordinator @ Crown Worldwide<br>(humble beginnings, legendary arc)</td></tr>
+              <tr><td>&#128187; EXPERTISE</td><td>Operations, Sales, Admin, Recruiting, Event Management, SaaS, Scaling Startups, Literally Everything</td></tr>
+              <tr><td>&#127757; LOCATION</td><td>&#127956; Montenegro (from Philippines to the Adriatic, what a flex)</td></tr>
+              <tr><td>&#9200; EXPERIENCE</td><td>17+ years of doing every job that exists</td></tr>
+              <tr><td>&#128176; BIGGEST FLEX</td><td>Fortune 500 account management (casually)</td></tr>
+              <tr><td>&#128293; SUPERPOWER</td><td>Can walk into any chaotic startup and have it running smoothly by lunch</td></tr>
+              <tr><td>&#127925; FAV SONG</td><td>She Works Hard for the Money - Donna Summer (autobiographical)</td></tr>
+              <tr><td>&#128055; SPIRIT ANIMAL</td><td>An octopus (8 arms for 8 simultaneous job roles)</td></tr>
+              <tr><td>&#9749; FUEL</td><td>Coffee &#8594; Organize &#8594; Optimize &#8594; Conquer &#8594; Repeat</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- CAREER TIMELINE -->
+        <div class="retro-box">
+          <div class="retro-box-title">
+            <span>&#128197; Career Journey (it's an EPIC SAGA)</span>
+            <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+          </div>
+          <div class="retro-box-content">
+            <div class="chaos-timeline">
+              <div class="timeline-item">
+                <h4>NOW - Curriculum Coach / Ops @ Clay Bootcamp </h4>
+                <div class="timeline-company">&#128081; The Current Reign</div>
+                <div class="timeline-desc">Helping startups scale by optimizing systems and processes. Basically the person who walks into your messy startup and says "sweetie no, we're fixing ALL of this." Running ops from Montenegro because she's earned it. &#128081;</div>
+              </div>
+              <div class="timeline-item">
+                <h4>Freelance Swiss Army Knife</h4>
+                <div class="timeline-company">&#9881;&#65039; Executive Assistant / Ops Specialist / Recruiter</div>
+                <div class="timeline-desc">She literally did three different freelance roles AT THE SAME TIME. Executive assisting, operations specializing, AND recruiting. Some people can't even handle one job title. Ria had three. With Fortune 500 clients. C2 English proficiency just to flex harder. &#128170;</div>
+              </div>
+              <div class="timeline-item">
+                <h4>Owner & Event Manager</h4>
+                <div class="timeline-company">&#127878; Her Own Event Management Company</div>
+                <div class="timeline-desc">Decided that managing operations for OTHER people's companies wasn't fulfilling enough, so she CREATED HER OWN COMPANY to manage events. Peak operations energy. "I don't just attend the party, I AM the party (coordinator)."</div>
+              </div>
+              <div class="timeline-item">
+                <h4>Residential Sales Consultant</h4>
+                <div class="timeline-company">&#128230; Crown Worldwide Group (FINAL FORM)</div>
+                <div class="timeline-desc">The ultimate evolution. She went from shipping boxes to selling people on moving their entire lives across the globe. That's called a CAREER ARC, people. &#128640;</div>
+              </div>
+              <div class="timeline-item">
+                <h4>Corporate Service Executive</h4>
+                <div class="timeline-company">&#128230; Crown Worldwide Group (EVOLVED)</div>
+                <div class="timeline-desc">Level 2 unlocked. Now handling corporate accounts and bigger operations. The shipping coordinator has entered her corporate era.</div>
+              </div>
+              <div class="timeline-item">
+                <h4>Shipping Coordinator</h4>
+                <div class="timeline-company">&#128230; Crown Worldwide Group (THE ORIGIN)</div>
+                <div class="timeline-desc">Where it all began. Coordinating shipments. Little did Crown Worldwide know they had just hired someone who would evolve through their ENTIRE org chart. <span class="blink" style="color:var(--cyber-red);">ORIGIN STORY.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GAMES SECTION -->
+    <div style="padding: 0 15px;">
+
+      <div style="text-align: center; margin: 20px 0;">
+        <h2 class="rainbow-text" style="font-family: 'Bungee Shade', cursive; font-size: clamp(20px, 4vw, 36px);">
+          &#127918; GAME ZONE &#127918;
+        </h2>
+        <p style="font-family: 'Comic Sans MS', cursive; color: var(--neon-pink); font-size: 14px;">
+          (because every good website needs games, obviously)
+        </p>
+      </div>
+
+      <!-- SNAKE GAME -->
+      <div class="retro-box" style="max-width: 500px; margin: 15px auto;">
+        <div class="retro-box-title">
+          <span>&#128013; SNAKE: Automation Edition</span>
+          <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+        </div>
+        <div class="game-header">
+          <span id="snake-canvas-score" class="game-score">Press START to play</span>
+          <button id="snake-canvas-start" style="
+            background: #39ff14; color: #000; border: 2px outset #66ff66;
+            font-family: 'Press Start 2P', monospace; font-size: 9px;
+            padding: 4px 12px; cursor: pointer;
+          ">&#128013; START</button>
+        </div>
+        <div class="game-container">
+          <canvas id="snake-canvas" width="480" height="300" style="background: #000; display: block; width: 100%; image-rendering: pixelated;"></canvas>
+        </div>
+        <div style="padding: 5px 8px; font-family: 'Comic Sans MS', cursive; font-size: 10px; color: #888; text-align: center;">
+          Use arrow keys to move. Eat food. Don't hit walls. Simple, like life should be.
+        </div>
+      </div>
+
+      <!-- WHACK-A-BUG GAME -->
+      <div class="retro-box" style="max-width: 500px; margin: 15px auto;">
+        <div class="retro-box-title">
+          <span>&#128296; WHACK-A-BUG: QA Simulator</span>
+          <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+        </div>
+        <div class="game-header">
+          <span id="whack-game-score" class="game-score">Click START!</span>
+          <span id="whack-game-timer" class="game-score"></span>
+          <button id="whack-game-start" style="
+            background: #ff6600; color: #000; border: 2px outset #ff9944;
+            font-family: 'Press Start 2P', monospace; font-size: 9px;
+            padding: 4px 12px; cursor: pointer;
+          ">&#128296; START</button>
+        </div>
+        <div id="whack-game" style="padding: 15px; background: #0a0500;">
+          <div id="whack-game-grid" style="
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 250px;
+            margin: 0 auto;
+          "></div>
+        </div>
+        <div style="padding: 5px 8px; font-family: 'Comic Sans MS', cursive; font-size: 10px; color: #888; text-align: center;">
+          Click the bugs before they escape! &#128142; items = bonus points. 30 seconds. GO!
+        </div>
+      </div>
+
+      <!-- COOKIE CLICKER -->
+      <div class="retro-box" style="max-width: 500px; margin: 15px auto;">
+        <div class="retro-box-title">
+          <span>&#127850; COOKIE CLICKER: Revenue Edition</span>
+          <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+        </div>
+        <div style="padding: 20px; text-align: center; background: #0a0500;">
+          <div id="cookie-game">
+            <div id="cookie-game-count" style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--neon-yellow); margin-bottom: 5px;">0 cookies</div>
+            <div id="cookie-game-cps" style="font-family: 'Silkscreen', monospace; font-size: 9px; color: #888; margin-bottom: 15px;">0 cookies/sec | Click power: 1</div>
+            <div style="position: relative; display: inline-block;">
+              <div id="cookie-game-cookie" class="cookie-btn">&#127850;</div>
+            </div>
+            <div style="margin-top: 15px;">
+              <div style="font-family: 'Silkscreen', monospace; font-size: 10px; color: var(--neon-green); margin-bottom: 8px;">UPGRADES:</div>
+              <div id="cookie-game-upgrades"></div>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 5px 8px; font-family: 'Comic Sans MS', cursive; font-size: 10px; color: #888; text-align: center;">
+          Click cookie. Get cookies. Buy upgrades. This is peak productivity.
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GUESTBOOK -->
+    <div class="retro-box" style="margin-top: 20px;">
+      <div class="retro-box-title">
+        <span>&#128221; Guestbook (plz sign!!)</span>
+        <div class="window-buttons"><span>_</span><span>&#9633;</span><span>X</span></div>
+      </div>
+      <div class="retro-box-content guestbook">
+        <div class="guestbook-entry">
+          <span class="gb-name">xX_CrownShipper_Xx</span> <span class="gb-date">03/14/2003 9:15 AM</span>
+          <p>ria!! its me from crown worldwide!! remember when u coordinated that shipment to dubai in like 2 hours?? legend. absolute legend. miss u queen &#128081;&#128081;</p>
+        </div>
+        <div class="guestbook-entry">
+          <span class="gb-name">~*StartupCEO_Panic*~</span> <span class="gb-date">02/28/2003 3:33 PM</span>
+          <p>hired ria to fix my startup's ops. she looked at my processes and literally sighed. then she fixed everything in a week. 10/10 would be judged again &#128557;</p>
+        </div>
+        <div class="guestbook-entry">
+          <span class="gb-name">Fortune500Fan</span> <span class="gb-date">01/20/2003 11:00 AM</span>
+          <p>just stopping by 2 say that ria handled our entire corporate account and we still don't know how one person did all that. are u secretly twins?? &#128064;</p>
+        </div>
+        <div class="guestbook-entry">
+          <span class="gb-name">EventPlanner2003</span> <span class="gb-date">12/31/2002 11:59 PM</span>
+          <p>went to an event ria organized. everything was PERFECT. the napkins were color-coordinated with the powerpoint slides. she's not human. &#127878;</p>
+        </div>
+        <div class="guestbook-entry">
+          <span class="gb-name">MontenegroVibes</span> <span class="gb-date">12/15/2002 7:00 AM</span>
+          <p>saw ria at a cafe in montenegro working on her laptop. she had 14 tabs open and was on 3 calls simultaneously. local hero tbh &#127956;&#128187;</p>
+        </div>
+        <br>
+        <div class="guestbook-form">
+          <p style="color: var(--neon-yellow); font-size: 12px; margin-bottom: 5px;">&#9998; Leave a message:</p>
+          <textarea placeholder="type ur message here... (jk this doesn't actually work lol)"></textarea>
+          <button onclick="alert('Just kidding! This guestbook is powered by IMAGINATION.')">&#128228; Submit</button>
+          <button onclick="alert('You thought there was a reset? How cute.')">&#128260; Reset</button>
+        </div>
+      </div>
+    </div>    <!-- BADGE SHELF -->
+    <div style="text-align: center; padding: 15px;">
+      <div class="badge-shelf">
+        <div class="badge badge-netscape">NETSCAPE NOW!</div>
+        <div class="badge badge-construction">ALWAYS BUILDING</div>
+        <div class="badge badge-free">RIA APPROVED</div>
+        <div class="badge badge-geocities">GEOCITIES 4EVER</div>
+        <div class="badge badge-ie">MADE IN MONTENEGRO</div>
+        <div class="badge badge-noframes">FRAMES R BAD</div>
+      </div>
+      <br>
+
+      <!-- VISITOR COUNTER -->
+      <span style="font-family: 'Silkscreen', monospace; font-size: 10px; color: var(--neon-yellow);">YOU ARE VISITOR #:</span><br>
+      <div id="visitor-count" class="odometer" style="margin-top: 5px;">
+        <span class="odo-digit">0</span>
+        <span class="odo-digit">1</span>
+        <span class="odo-digit">7</span>
+        <span class="odo-digit">5</span>
+        <span class="odo-digit">0</span>
+        <span class="odo-digit">0</span>
+      </div>
+      <br><br>
+      <p style="font-family: 'Comic Sans MS', cursive; font-size: 11px; color: #666;">
+        &#169; 2003 Ria's Operations Command Center. All rights reserved.<br>
+        No processes were left unoptimized in the making of this website.<br>
+        (They were all shipped on time and under budget.)<br><br>
+        <span style="font-size: 9px; color: #444;">Best viewed at 800x600 on Netscape Navigator 4.0 with a project management certification and a strong coffee</span>
+      </p>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM MARQUEE -->
+  <div class="marquee-bar">
+    <div class="marquee-content">
+      &#128293; RIA O. - OPS - 17-YEAR VETERAN - CROWN WORLDWIDE LEGEND - EVENT QUEEN - FORTUNE 500 HANDLER - CS DEGREE HOLDER WHO CHOSE CHAOS - SHIPPING COORDINATOR TURNED OPS EMPRESS &#128293; IF YOU'RE READING THIS YOU'VE SCROLLED TOO FAR &#128293; GO OPTIMIZE SOMETHING &#128293; OR BETTER YET, HIRE RIA TO DO IT FOR YOU &#128293;
+    </div>
+  </div>
+
+  <script src="js/effects.js"></script>
+  <script src="js/games.js"></script>
 </body>
 </html>
